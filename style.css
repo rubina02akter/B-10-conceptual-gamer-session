@@ -1,0 +1,148 @@
+ * {
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.work-sans {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* nav styels */
+.nav-container{
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.137);
+}
+.nav-main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.nav-left{
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.nav-right{
+  display: flex;
+}
+.nav-btn{
+  background-color: transparent;
+  border: none;
+  margin-right: 15px;
+  font-size: 1rem;
+}
+.nav-btn-follow{
+  background-color:  rgba(11, 2, 35, 0.1);
+  border: none;
+  border-radius: 6px;
+  padding: 7px 15px;
+  margin: 0px;
+}
+/* header styles  */
+.header-container{
+  background-image: url(images/Group\ 14.png);
+  background-repeat: no-repeat;
+}
+.header-main{
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-left{
+  width: 50%;
+}
+.header-left-description{
+  line-height: 40px;
+}
+.goat{
+  font-size: 3rem;
+  font-weight: 800;
+  background-image: linear-gradient(#F948B2,#8758F1); 
+  background-clip: text ;
+  color: transparent;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.301) ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.header-right{
+  width: 50%;
+}
+.header-right img {
+  width: 100%;
+}
+.header-btn-1 , .header-btn-2{
+  border: none;
+  border-radius: 23px;
+  padding: 10px 30px;
+  margin-top: 20px;
+}
+
+.header-btn-1{
+  background-color: rgba(255, 66, 165, 1);
+}
+.header-btn-2{
+  background-color: rgba(78, 197, 247, 1);
+}
+
+
+
+
+
+@media screen and (max-width: 576px) {
+  .nav-container{
+    box-shadow: none;
+    margin-top: 20px;
+  }
+  .nav-main{
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+  }
+  .nav-right{
+      flex-direction: column;
+  }
+  .nav-right button{
+     margin-top: 20px;
+  }
+/* header */
+.header-main{
+  flex-direction: column-reverse;
+}
+.header-left , .header-right{
+  width: 80%;
+}
+.header-container{
+  background-image: none;
+
+}
+.header-left{
+  background-image: url(images/Group.png);
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  padding: 40px;
+  width: 80%;
+}
+.goat{
+  margin: 5px;
+  font-size: 2rem;
+}
+.header-left-description{
+  font-size: 1rem;
+}
+.header-left-description p{
+  font-size: 12px;
+}
+.header-btn-1 , .header-btn-2 {
+  margin-top: 10px;
+}
+
+}
